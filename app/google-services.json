@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "224299093196",
+    "project_id": "mysit708app",
+    "storage_bucket": "mysit708app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224299093196:android:02ec982b55b92ab3074669",
+        "android_client_info": {
+          "package_name": "com.example.mysit708app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224299093196-3i061oegkvvv85j5637ovu7skc87c3uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mysit708app",
+            "certificate_hash": "9b2414bcfc9e828289605f92550fff791f11bfcc"
+          }
+        },
+        {
+          "client_id": "224299093196-6f12lsan9pp8lo0bjo7jr1stcp1t8mde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpioEPWhJUMR2aizRbDGv_sAqQGmlpPew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224299093196-6f12lsan9pp8lo0bjo7jr1stcp1t8mde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
