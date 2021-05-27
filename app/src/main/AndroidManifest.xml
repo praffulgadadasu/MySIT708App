@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mysit708app">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySIT708App">
         <activity
+            android:name=".activities.DashBoardActivity"
+            android:label="@string/app_name"></activity>
+        <activity
             android:name=".activities.UserProfileActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".activities.ForgotPasswordActivity"
             android:screenOrientation="portrait"

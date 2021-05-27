@@ -44,5 +44,13 @@
     <string name="rb_lbl_male">MALE</string>
     <string name="rb_lbl_female">FEMALE</string>
     <string name="btn_lbl_save">Save</string>
+    <string name="image_selection_failed">Image selection Failed!</string>
+    <string name="err_msg_enter_mobile_number">Please enter mobile number.</string>
+    <string name="msg_profile_update_success">Your Profile is Updated Successfully.</string>
     <string name="read_storage_permission_denied">Oops, you just denied the permission for storage. You can also allow it from settings.</string>
+    <!--<string name="title_activity_dash_board">MainActivity</string>-->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="please_click_back_again_to_exit">Please Click back again to exit</string>
 </resources>
