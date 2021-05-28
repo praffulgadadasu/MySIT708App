@@ -1,8 +1,7 @@
-package com.example.mysit708app.activities
+package com.example.mysit708app.ui.activities
 
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -12,12 +11,10 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.appcompat.widget.AppCompatEditText
 import com.example.mysit708app.R
 import com.example.mysit708app.firestore.FirestoreClass
 import com.example.mysit708app.models.User
 import com.example.mysit708app.utils.Constants
-import com.example.mysit708app.utils.MSPEditText
 import com.google.firebase.auth.FirebaseAuth
 
 

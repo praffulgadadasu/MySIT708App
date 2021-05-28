@@ -40,6 +40,8 @@
     <string name="register_success">You are registered successfully.</string>
 
     <string name="title_complete_profile">COMPLETE PROFILE</string>
+    <string name="title_edit_profile">EDIT PROFILE</string>
+
     <string name="et_hint_mobile_number">Mobile Number</string>
     <string name="rb_lbl_male">MALE</string>
     <string name="rb_lbl_female">FEMALE</string>
@@ -49,8 +51,12 @@
     <string name="msg_profile_update_success">Your Profile is Updated Successfully.</string>
     <string name="read_storage_permission_denied">Oops, you just denied the permission for storage. You can also allow it from settings.</string>
     <!--<string name="title_activity_dash_board">MainActivity</string>-->
-    <string name="title_home">Home</string>
+    <string name="title_orders">Orders</string>
     <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_products">Products</string>
+    <string name="title_settings">Settings</string>
     <string name="please_click_back_again_to_exit">Please Click back again to exit</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
 </resources>

@@ -1,10 +1,8 @@
-package com.example.mysit708app.activities
+package com.example.mysit708app.ui.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.example.mysit708app.R

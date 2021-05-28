@@ -1,10 +1,7 @@
-package com.example.mysit708app.activities
+package com.example.mysit708app.ui.activities
 
-import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.text.TextUtils
 import android.view.WindowInsets
 import android.view.WindowManager

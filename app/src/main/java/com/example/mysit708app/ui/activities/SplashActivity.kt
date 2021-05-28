@@ -1,4 +1,4 @@
-package com.example.mysit708app.activities
+package com.example.mysit708app.ui.activities
 
 import android.content.Intent
 import android.os.Build
@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
         @Suppress("DEPRECATION")
         Handler().postDelayed(
             {
-                startActivity(Intent(this@SplashActivity, DashBoardActivity::class.java))
+                startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
                 finish()
             },
             1500

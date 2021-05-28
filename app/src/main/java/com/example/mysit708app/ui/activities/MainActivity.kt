@@ -1,4 +1,4 @@
-package com.example.mysit708app.activities
+package com.example.mysit708app.ui.activities
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity

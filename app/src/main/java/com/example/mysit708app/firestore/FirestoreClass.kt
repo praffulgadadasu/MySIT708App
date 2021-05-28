@@ -5,10 +5,11 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.net.Uri
 import android.util.Log
-import com.example.mysit708app.activities.LoginActivity
-import com.example.mysit708app.activities.RegisterActivity
-import com.example.mysit708app.activities.UserProfileActivity
+import com.example.mysit708app.ui.activities.LoginActivity
+import com.example.mysit708app.ui.activities.RegisterActivity
+import com.example.mysit708app.ui.activities.UserProfileActivity
 import com.example.mysit708app.models.User
+import com.example.mysit708app.ui.activities.SettingsActivity
 import com.example.mysit708app.utils.Constants
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -83,21 +84,24 @@ class FirestoreClass {
                     "${user.firstName} ${user.lastName}"
                 )
                 editor.apply()
-                // END
-
-                // START
                 when (activity) {
                     is LoginActivity -> {
                         // Call a function of base activity for transferring the result to it.
                         activity.userLoggedInSuccess(user)
                     }
+                    is SettingsActivity -> {
+                        // Call a function of base activity for transferring the result to it.
+                        activity.userDetailsSuccess(user)
+                    }
                 }
-                // END
             }
             .addOnFailureListener { e ->
                 // Hide the progress dialog if there is any error. And print the error in log.
                 when (activity) {
                     is LoginActivity -> {
+                        activity.hideProgressDialog()
+                    }
+                    is SettingsActivity -> {
                         activity.hideProgressDialog()
                     }
                 }

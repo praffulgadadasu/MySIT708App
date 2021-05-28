@@ -1,14 +1,15 @@
-package com.example.mysit708app.activities.ui.dashboard
+package com.example.mysit708app.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.mysit708app.R
 import com.example.mysit708app.databinding.FragmentDashboardBinding
+import com.example.mysit708app.ui.activities.SettingsActivity
 
 class DashboardFragment : Fragment() {
 
@@ -18,6 +19,11 @@ class DashboardFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -37,5 +43,21 @@ class DashboardFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.dashboard_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        when (id) {
+            R.id.action_settings -> {
+                startActivity(Intent(activity, SettingsActivity::class.java))
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
